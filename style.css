@@ -1,6 +1,7 @@
 .calculator {
-    width: 300px;
+    width: 50%;
     margin: 0 auto;
+    margin-top: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
@@ -8,7 +9,7 @@
   }
   
   .output {
-    width: 100%;
+    width: 95%;
     margin-bottom: 10px;
   }
   
@@ -24,12 +25,12 @@
   .buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
   
   .buttons button {
-    width: 48%;
-    margin-bottom: 10px;
+    width: 100%;
+    /* margin-bottom: 10px; */
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -41,4 +42,4 @@
   .buttons button:hover {
     background-color: #ccc;
   }
-  
+ 
