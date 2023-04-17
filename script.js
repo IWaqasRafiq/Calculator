@@ -11,3 +11,7 @@ function clearResult() {
 function calculate() {
 	result.value = eval(result.value);
 }
+
+function toggleTheme() {
+  document.body.classList.toggle('dark-theme');
+}

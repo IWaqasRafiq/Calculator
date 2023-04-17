@@ -1,20 +1,37 @@
 .calculator {
-    width: 50%;
+    width: fit-content;
+    height: fit-content;
     margin: 0 auto;
     margin-top: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
-    text-align: center;
+    /* text-align: center; */
   }
   
   .output {
-    width: 95%;
+    width: fit-content;
+    /* height: 70px; */
     margin-bottom: 10px;
   }
-  
+
+  .calculator img{
+    width: 35px;
+    position: absolute;
+
+    
+   }
+   .calculator button{
+    border: none !important;
+   }
+   button.theme{
+    display: none;
+    border: none;
+   }
+
   .output input {
-    width: 100%;
+    width: fit-content;
+    /* height: 70px; */
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -22,15 +39,9 @@
     text-align: right;
   }
   
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
   .buttons button {
-    width: 100%;
-    /* margin-bottom: 10px; */
+    width: 70px;
+    height: 70px;
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -41,5 +52,53 @@
   
   .buttons button:hover {
     background-color: #ccc;
+    
   }
- 
+  .plus{
+    height: 143px !important;   
+
+  }
+ .zero{
+  width: 143px !important;
+  
+ }
+ .equal{
+  height: 143px !important;
+ }
+ /* Light Theme */
+body.light-theme {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #333;
+  color: #f4f4f4;
+}
+.buttons button:hover {
+  background-color: #ccc;
+  color: #f4f4f4;
+}
+.calculator.dark-theme {
+  background-color: #444;
+  color: #f4f4f4;
+}
+
+.output input.dark-theme {
+  background-color: #444;
+  color: #f4f4f4;
+}
+
+.buttons button.dark-theme {
+  background-color: #666;
+  color: #f4f4f4;
+}
+
+.buttons button.dark-theme:hover {
+  background-color: #888;
+  color: #f4f4f4;
+}
+
+
+
